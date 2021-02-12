@@ -60,7 +60,9 @@
   [tabindex="-1"]:focus:not(:focus-visible) {
     outline: 0 !important;
   }
-  
+  .sidebar{
+    overflow:hidden !important;
+  }
   hr {
     box-sizing: content-box;
     height: 0;
