@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--  Bootstrap 4 Cdn -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
   <style>
       *{
           margin: 0;
@@ -24,64 +23,180 @@
 </head>
 <body>
 
-  <!---------Start Navbar-------->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <!---------Start Navbar-------->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+          <div class="container">
+              <a class="navbar-brand" href="#">Ultimate Inventory with POS</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active px-2">
+                      <a class="nav-link" href="#"> <i class="fa fa-bars"></i> Sales List</a>
+                  </li>
+                  <li class="nav-item active px-2">
+                      <a class="nav-link" href="#"> <i class="fa fa-calculator"></i> New Invoice</a>
+                  </li>
+                  <li class="nav-item active px-2">
+                      <a class="nav-link" href="#"> <i class="fa  fa-cubes"></i> Item List</a>
+                  </li>     
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active px-2">
+                    <a class="nav-link" href="#">Hold List <span class=" badge badge-danger">0</span></a>
+                  </li>
+                  <li class="nav-item active px-2">
+                      <a class="nav-link" href="#"> <i class="fa fa-dashboard"></i> Dashboard</a>
+                  </li>
+
+
+
+                  <li class="nav-item active px-2">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                    
+                </li>
+
+                  
+                    
+                </ul>
+            </div>
+          </div>
+      </nav>
+      <!-----------End Navbar-------->
+      <br>
+      <!-------Start Content---------->
       <div class="container">
-          <a class="navbar-brand" href="#">Ultimate Inventory with POS</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active px-2">
-                  <a class="nav-link" href="#"> <i class="fa fa-bars"></i> Sales List</a>
-              </li>
-              <li class="nav-item active px-2">
-                  <a class="nav-link" href="#"> <i class="fa fa-calculator"></i> New Invoice</a>
-              </li>
-              <li class="nav-item active px-2">
-                  <a class="nav-link" href="#"> <i class="fa  fa-cubes"></i> Item List</a>
-              </li>     
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active px-2">
-                <a class="nav-link" href="#">Hold List <span class=" badge badge-danger">0</span></a>
-              </li>
-              <li class="nav-item active px-2">
-                  <a class="nav-link" href="#"> <i class="fa fa-dashboard"></i> Dashboard</a>
-              </li>
+
+        <div class="row">
+
+          <div class="col-md-8">
+                  <div class="card">
+                        <!-- start card -->
+                        <div class="card-header">
+                          <i class="fa fa-shopping-cart text-primary fa-2x px-2"></i> 
+                          <span class="lead"> Sales Invoice</span>
+                        </div>
+                        <!-- start card body -->
+                        <div class="card-body">
+                            <!-- Start Form -->
+                              <form>
+                                <!-- start row -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                        </div>
+                                        <select id="inputState" class="form-control">
+                                          <option selected>Walk-in customer</option>
+                                          <option>John</option>
+                                          <option>Moris</option>
+                                          <option>Root</option>
+                                          <option>Joy</option>
+                                        </select>
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text"><i class="fa fa-user-plus text-primary"></i></div>
+                                        </div>
+                                      </div>
+                                    </div>
+      
+      
+                                    <div class="col-md-6">
+                                      <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text"><i class="fa fa-barcode"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Item name/Barcode/Itemcode">
+                                      </div>
+                                    </div>              
+      
+                                </div>
+                                <!-- end row -->
+      
+                              </form>
+                            <!-- Start Form -->
+                                <!-- Start table -->
+                                    <div class="border border-primary mt-3">
+                                        <div class="row p-2">
+                                          <div class="col-md-12">
+                                            <table class="table table-condensed table-bordered table-striped table-responsive">
+                                              <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th width="30%">Item Name</th>
+                                                    <th width="10%">Stock</th>
+                                                    <th width="25%">Quantity</th>
+                                                    <th width="15%">Price</th>
+                                                    <th width="10%">Discount</th>
+                                                    <th width="10%">Tax</th>
+                                                    <th width="15%">Subtotal</th>
+                                                    <th width="5%"><i class="fa fa-close"></i></th>
+                                                </tr>
+                                              </thead>
+                                              <tbody id="pos-form-tbody" style="font-size: 16px;font-weight: bold;overflow: scroll;">
+                                                <!-- body code -->
+                                              </tbody>        
+                                              <tfoot>
+                                                <!-- footer code -->
+                                              </tfoot>              
+                                            </table>
 
 
+                                          </div>
+                                        </div>
+                                    </div>
+                                <!-- Start table -->
 
-              <li class="nav-item active px-2">
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown button
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                                <!-- Start 2 Form -->
+                                    <div>
+                                      
+                                      
+                                    </div>
+                                <!-- End 2 Form -->
+
+                        </div>
+                    <!-- end card body -->
                   </div>
-                </div>
-                
-            </li>
-
-              
-                
-            </ul>
+                <!-- end card -->
+          </div>
+      
+      
+      
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+      
         </div>
+
+
+        
+
+
       </div>
-  </nav>
-  <!-----------End Navbar-------->
 
-  <!-------Start Content---------->
+      <!---------End Content---------->
 
-  <!---------End Content---------->
+      <!-------Start Footer---------->
 
-  <!-------Start Footer---------->
-
-  <!---------End Footer---------->
+      <!---------End Footer---------->
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
