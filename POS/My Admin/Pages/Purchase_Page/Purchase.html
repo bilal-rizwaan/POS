@@ -13,7 +13,9 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+  
 <div class="wrapper">
+
         <!-- Start Navbar-->
         <nav class="main-header navbar navbar-expand navbar-primary navbar-dark">
           <!-- Left navbar links -->
@@ -98,779 +100,779 @@
         </nav>
         <!-- /. End Navbar-->
 
-    <!-- /.content-wrapper -->
-    <div class="content-wrapper">
-        <div class="content-header">
-            <div class="container-fluid">
-                    <!-- alert start -->
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Ultimate Inventory with POS new Version 1.7.7 released , Faster and Customizable Application Software. If you have any queries please message here. [Some features are disabled in demo and it will be reset after each hour.]</strong> 
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true" class="text-white">&times;</span>
-                    </button>
-                        </div>
-                    <!-- alert end -->
-
-                  <!---------------- Start Table  --------------->
-
-                    <!--Start Calculation -->
-                    <div class="container border-top">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <form>
-                                    <label>Customer Name <span class="text-danger">*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>Walk-In Customer</option>
-                                        <option>Walk-In Customer</option>
-                                        <option>Walk-In Customer</option>
-                                        <option>Walk-In Customer</option>
-                                        <option>Walk-In Customer</option>
-                                    </select>                                
-                                    <br>
-                                    <label>Sales Date <span class="text-danger">*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>Walk-In Customer</option>
-                                        <option>Walk-In Customer</option>
-                                        <option>Walk-In Customer</option>
-                                        <option>Walk-In Customer</option>
-                                        <option>Walk-In Customer</option>
-                                    </select>       
-                                </form>
+        <!-- /.content-wrapper -->
+        <div class="content-wrapper">
+            <div class="content-header">
+                <div class="container-fluid">
+                        <!-- alert start -->
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Ultimate Inventory with POS new Version 1.7.7 released , Faster and Customizable Application Software. If you have any queries please message here. [Some features are disabled in demo and it will be reset after each hour.]</strong> 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                        </button>
                             </div>
-                            <div class="col-md-6">
-                                <form>
+                        <!-- alert end -->
+
+                      <!---------------- Start Table  --------------->
+
+                        <!--Start Calculation -->
+                        <div class="container border-top">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form>
                                         <label>Customer Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" placeholder="First name">
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>Walk-In Customer</option>
+                                            <option>Walk-In Customer</option>
+                                            <option>Walk-In Customer</option>
+                                            <option>Walk-In Customer</option>
+                                            <option>Walk-In Customer</option>
+                                        </select>                                
                                         <br>
-                                        <label>Customer Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" placeholder="Last name">
+                                        <label>Sales Date <span class="text-danger">*</span></label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>Walk-In Customer</option>
+                                            <option>Walk-In Customer</option>
+                                            <option>Walk-In Customer</option>
+                                            <option>Walk-In Customer</option>
+                                            <option>Walk-In Customer</option>
+                                        </select>       
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <form>
+                                            <label>Customer Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="First name">
+                                            <br>
+                                            <label>Customer Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                    </form>
+                                </div>
+                            </div>    
+                        </div>
+                        <!--Start Calculation -->
+                        <br><br>
+                        <!-- Start Barcode -->
+                        <div class="container border-top">
+                            <br><br>
+                            <div class="col-md-8 col-md-offset-2 d-flex justify-content mx-auto">
+                                <div class="input-group">
+                                  <span class="bg-lightblue py-1 text-center"><i class="fa fa-barcode px-3 text-center mt-2"></i> </span>
+                                    <input type="text" class="form-control  py-3" placeholder="Item name/Barcode/Itemcode" id="item_search" autocomplete="off">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- End Barcode -->
+                        <br><br>
+                        <!------Start table----->
+                        <div class="box-body">
+                            <div class="table-responsive" style="width: 100%">
+                                <table class="table table-hover table-bordered" style="width:100%" id="sales_table">
+                                    <thead class="custom_thead ">
+                                        <tr class="bg-primary">
+                                            <th rowspan="2" style="width:15%">Item Name</th>
+                                            <th rowspan="2" style="width:10%;min-width: 180px;">Quantity</th>
+                                            <th rowspan="2" style="width:10%">Unit Price</th> 
+                                            <th rowspan="2" style="width:10%">Discount($)</th>
+                                            <th rowspan="2" style="width:10%">Tax Amount</th>
+                                            <th rowspan="2" style="width:5%">Tax</th>
+                                            <th rowspan="2" style="width:7.5%">Total Amount</th>
+                                            <th rowspan="2" style="width:7.5%">Action</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- start table record -->
+                        <div class="row">
+                            <div class="col-md-7 p-5">
+                                <form>
+                                    <div class="d-flex justify-content-between mx-auto">
+                                        <h1 class="display-3">Quantity <span class="text-success font-weight-bold">0</span></h1>
+                                    </div>
+                                    <br>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Other Charges</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputState">Select</label>
+                                                <select id="inputState" class="form-control">
+                                                <option selected>None</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                                </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Discount on All</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputState">Select</label>
+                                                <select id="inputState" class="form-control">
+                                                <option selected>Per%</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Note</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
                                 </form>
                             </div>
-                        </div>    
-                    </div>
-                    <!--Start Calculation -->
-                    <br><br>
-                    <!-- Start Barcode -->
-                    <div class="container border-top">
-                        <br><br>
-                        <div class="col-md-8 col-md-offset-2 d-flex justify-content mx-auto">
-                            <div class="input-group">
-                              <span class="bg-lightblue py-1 text-center"><i class="fa fa-barcode px-3 text-center mt-2"></i> </span>
-                                <input type="text" class="form-control  py-3" placeholder="Item name/Barcode/Itemcode" id="item_search" autocomplete="off">
+                            <div class="col-md-5 mt-5 p-5 " >
+                                <!-- table total -->
+                                <div class="record" style="line-height: 3;">
+                                    <table class="col-md-6 ml-5">
+                                        <tbody><tr>
+                                          <th class="text-right" style="font-size: 20px;">Subtotal</th>
+                                          <th class="text-right" style="padding-left:10%;font-size: 20px;">
+                                              <h4><b id="subtotal_amt" name="subtotal_amt">0.00</b></h4>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th class="text-right" style="font-size: 20px;">Other Charges</th>
+                                          <th class="text-right" style="padding-left:10%;font-size: 20px;">
+                                              <h4><b id="other_charges_amt" name="other_charges_amt">0.00</b></h4>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th class="text-right" style="font-size: 20px;">Discount on All</th>
+                                          <th class="text-right" style="padding-left:10%;font-size: 20px;">
+                                              <h4><b id="discount_to_all_amt" name="discount_to_all_amt">0.00</b></h4>
+                                          </th>
+                                        </tr>
+                                        <tr style="display: none;">
+                                          <th class="text-right" style="font-size: 20px;">Round Off                                                <i class="hover-q " data-container="body" data-toggle="popover" data-placement="top" data-content="Go to Site Settings-> Site -> Disable the Round Off(Checkbox)." data-html="true" data-trigger="hover" data-original-title="Do you wants to Disable Round Off ?" title="">
+                                                <i class="fa fa-info-circle text-maroon text-black hover-q"></i>
+                                              </i>
+                                            
+                                          </th>
+                                          <th class="text-right" style="padding-left:10%;font-size: 20px;">
+                                              <h4><b id="round_off_amt" name="tot_round_off_amt">0.00</b></h4>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th class="text-right" style="font-size: 20px;">Grand Total</th>
+                                          <th class="text-right" style="padding-left:10%;font-size: 17px;">
+                                              <h4><b id="total_amt" name="total_amt">0.00</b></h4>
+                                          </th>
+                                        </tr>
+                                    </tbody></table>
                                 </div>
+
+                                <!-- table total -->
+                            </div>
                         </div>
-                    </div>
-                    <!-- End Barcode -->
-                    <br><br>
-                    <!------Start table----->
-                    <div class="box-body">
-                        <div class="table-responsive" style="width: 100%">
-                            <table class="table table-hover table-bordered" style="width:100%" id="sales_table">
-                                <thead class="custom_thead ">
-                                    <tr class="bg-primary">
-                                        <th rowspan="2" style="width:15%">Item Name</th>
-                                        <th rowspan="2" style="width:10%;min-width: 180px;">Quantity</th>
-                                        <th rowspan="2" style="width:10%">Unit Price</th> 
-                                        <th rowspan="2" style="width:10%">Discount($)</th>
-                                        <th rowspan="2" style="width:10%">Tax Amount</th>
-                                        <th rowspan="2" style="width:5%">Tax</th>
-                                        <th rowspan="2" style="width:7.5%">Total Amount</th>
-                                        <th rowspan="2" style="width:7.5%">Action</th>
+
+                        <!-- start table record -->
+
+                        <!------End table----->
+                        <br>
+                        <!----payment table--->
+                        <div class="box-body ">
+                            <div class="col-md-12">
+                            <h4 class="box-title text-info">Previous Payments Information : </h4><table class="table table-hover table-bordered" style="width:100%" id="payments_table">
+                                <thead>
+                                    <tr class="bg-gray ">
+                                    <th>#</th>
+                                    <th>Date</th>
+                                    <th>Payment Type</th>
+                                    <th>Payment Note</th>
+                                    <th>Payment</th>
+                                    <th>Action</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    <tr><td colspan="6" class="text-center text-bold">Payments Pending!!</td></tr>                                             </tbody>
                             </table>
-                        </div>
-                    </div>
-                    <hr>
-                    <!-- start table record -->
-                    <div class="row">
-                        <div class="col-md-7 p-5">
-                            <form>
-                                <div class="d-flex justify-content-between mx-auto">
-                                    <h1 class="display-3">Quantity <span class="text-success font-weight-bold">0</span></h1>
-                                </div>
-                                <br>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="inputEmail4">Other Charges</label>
-                                        <input type="email" class="form-control" id="inputEmail4">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="inputState">Select</label>
-                                            <select id="inputState" class="form-control">
-                                            <option selected>None</option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                            </select>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="inputEmail4">Discount on All</label>
-                                        <input type="email" class="form-control" id="inputEmail4">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="inputState">Select</label>
-                                            <select id="inputState" class="form-control">
-                                            <option selected>Per%</option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                            </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Note</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-5 mt-5 p-5 " >
-                            <!-- table total -->
-                            <div class="record" style="line-height: 3;">
-                                <table class="col-md-6 ml-5">
-                                    <tbody><tr>
-                                       <th class="text-right" style="font-size: 20px;">Subtotal</th>
-                                       <th class="text-right" style="padding-left:10%;font-size: 20px;">
-                                          <h4><b id="subtotal_amt" name="subtotal_amt">0.00</b></h4>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <th class="text-right" style="font-size: 20px;">Other Charges</th>
-                                       <th class="text-right" style="padding-left:10%;font-size: 20px;">
-                                          <h4><b id="other_charges_amt" name="other_charges_amt">0.00</b></h4>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <th class="text-right" style="font-size: 20px;">Discount on All</th>
-                                       <th class="text-right" style="padding-left:10%;font-size: 20px;">
-                                          <h4><b id="discount_to_all_amt" name="discount_to_all_amt">0.00</b></h4>
-                                       </th>
-                                    </tr>
-                                    <tr style="display: none;">
-                                       <th class="text-right" style="font-size: 20px;">Round Off                                                <i class="hover-q " data-container="body" data-toggle="popover" data-placement="top" data-content="Go to Site Settings-> Site -> Disable the Round Off(Checkbox)." data-html="true" data-trigger="hover" data-original-title="Do you wants to Disable Round Off ?" title="">
-                                             <i class="fa fa-info-circle text-maroon text-black hover-q"></i>
-                                           </i>
-                                         
-                                       </th>
-                                       <th class="text-right" style="padding-left:10%;font-size: 20px;">
-                                          <h4><b id="round_off_amt" name="tot_round_off_amt">0.00</b></h4>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <th class="text-right" style="font-size: 20px;">Grand Total</th>
-                                       <th class="text-right" style="padding-left:10%;font-size: 17px;">
-                                          <h4><b id="total_amt" name="total_amt">0.00</b></h4>
-                                       </th>
-                                    </tr>
-                                 </tbody></table>
                             </div>
-
-                            <!-- table total -->
                         </div>
-                    </div>
-
-                    <!-- start table record -->
-
-                    <!------End table----->
-                    <br>
-                    <!----payment table--->
-                    <div class="box-body ">
-                        <div class="col-md-12">
-                        <h4 class="box-title text-info">Previous Payments Information : </h4><table class="table table-hover table-bordered" style="width:100%" id="payments_table">
-                            <thead>
-                                <tr class="bg-gray ">
-                                <th>#</th>
-                                <th>Date</th>
-                                <th>Payment Type</th>
-                                <th>Payment Note</th>
-                                <th>Payment</th>
-                                <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td colspan="6" class="text-center text-bold">Payments Pending!!</td></tr>                                             </tbody>
-                        </table>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col-md-12 payments_div payments_div_">
-                        <h4 class="box-title text-info">Subtotal :</h4>
-                        <div class="box box-solid bg-gray p-3">        
-                        <div class="box-body">
-                            <div class="row">
-                            <div class="col-md-6">
+                        <br>
+                        <br>
+                        <div class="col-md-12 payments_div payments_div_">
+                            <h4 class="box-title text-info">Subtotal :</h4>
+                            <div class="box box-solid bg-gray p-3">        
+                            <div class="box-body">
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <label for="amount">Amount</label>
+                                        <input type="text" class="form-control text-right paid_amt only_currency" id="amount" name="amount" placeholder="">
+                                            <span id="amount_msg" style="display:none" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
                                 <div class="">
-                                    <label for="amount">Amount</label>
-                                    <input type="text" class="form-control text-right paid_amt only_currency" id="amount" name="amount" placeholder="">
-                                        <span id="amount_msg" style="display:none" class="text-danger"></span>
+                                    <label for="payment_type">Payment Type</label>
+                                    <select class="form-control select2 select2-hidden-accessible" id="payment_type" name="payment_type" tabindex="-1" aria-hidden="true">
+                                        <option value="">-Select-</option><option value="Cash">Cash</option><option value="Card">Card</option><option value="Paytm">Paytm</option><option value="Finance">Finance</option>    
+                                    </select>
+                                    <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 522px;"><span class="selection">
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                            <div class="">
-                                <label for="payment_type">Payment Type</label>
-                                <select class="form-control select2 select2-hidden-accessible" id="payment_type" name="payment_type" tabindex="-1" aria-hidden="true">
-                                    <option value="">-Select-</option><option value="Cash">Cash</option><option value="Card">Card</option><option value="Paytm">Paytm</option><option value="Finance">Finance</option>    
-                                </select>
-                                <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 522px;"><span class="selection">
-                            </div>
-                            </div>
-                        <div class="clearfix"></div>
-                    </div>  
-                    <div class="row">
-                            <div class="col-md-12">
-                                <div class="">
-                                    <label for="payment_note">Payment Note</label>
-                                    <textarea type="text" class="form-control" id="payment_note" name="payment_note" placeholder=""></textarea>
-                                    <span id="payment_note_msg" style="display:none" class="text-danger"></span>
                                 </div>
-                            </div>      
-                        <div class="clearfix"></div>
-                    </div>   
-                    </div>
-                    </div>     
-                    <br>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Send SMS to Custome <i class="fa fa-info-circle text-maroon text-black hover-q"></i></label>
-                    </div>
-                    </div>
-                    <hr>
-                    <br>
-                    <div class=" d-flex mx-auto justify-content-center align-items-center ">
-                        <button type="button" class="btn btn-danger btn-lg w-25 ">Save</button>
-                        &nbsp;
-                        <button type="button" class="btn btn-secondary btn-lg w-25">Close</button>
+                            <div class="clearfix"></div>
+                        </div>  
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <div class="">
+                                        <label for="payment_note">Payment Note</label>
+                                        <textarea type="text" class="form-control" id="payment_note" name="payment_note" placeholder=""></textarea>
+                                        <span id="payment_note_msg" style="display:none" class="text-danger"></span>
+                                    </div>
+                                </div>      
+                            <div class="clearfix"></div>
+                        </div>   
+                        </div>
+                        </div>     
+                        <br>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Send SMS to Custome <i class="fa fa-info-circle text-maroon text-black hover-q"></i></label>
+                        </div>
+                        </div>
+                        <hr>
+                        <br>
+                        <div class=" d-flex mx-auto justify-content-center align-items-center ">
+                            <button type="button" class="btn btn-danger btn-lg w-25 ">Save</button>
+                            &nbsp;
+                            <button type="button" class="btn btn-secondary btn-lg w-25">Close</button>
 
-                    </div>
-                    <!----payment table--->
-                    
-                    <!------------------ End Table ---------------------->
-                    
+                        </div>
+                        <!----payment table--->
+                        
+                        <!------------------ End Table ---------------------->
+                        
+                </div>
             </div>
-        </div>
-    </div> 
+        </div> 
 
-    <!-- Start footer -->
-        <footer class="main-footer">
-            <strong>Copyright &copy; 2020-2021- <a href="#">Bilal.capripio</a>.</strong>
-            All rights reserved.
-            <div class="float-right d-none d-sm-inline-block"><b>Version</b> 3.0.5 </div>
-        </footer>
-    <!-- End footer -->
+        <!-- Start footer -->
+            <footer class="main-footer">
+                <strong>Copyright &copy; 2020-2021- <a href="#">Bilal.capripio</a>.</strong>
+                All rights reserved.
+                <div class="float-right d-none d-sm-inline-block"><b>Version</b> 3.0.5 </div>
+            </footer>
+        <!-- End footer -->
 
-    <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-danger elevation-4">
-      <!-- Brand Logo -->
-          <a href="../../My.html" class="brand-link">
-            <img src="../../Img/admin.png" width="50" height="50" alt="AdminLTE Logo" class="brand-image img-circle elevation-3 img-fluid"
-                style="opacity: .8">
-            <span class="brand-text font-weight-light text-monospace">POS SYSTEM</span><br>
-            <span class="brand-text font-weight-light mx-5" style="font-size: 12px;"><i class="fa fa-circle text-success" style="font-size: 12px;"></i> Online</span>
-          </a>
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <!-- Sidebar Menu -->
-          <nav class="mt-5">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-              <li class="nav-item has-treeview menu-open mb-3">
-                <a href="#" class="nav-link active">
-                  <i class="nav-icon fa fa-dashboard text-aqua"></i>
-                  <p>
-                    Dashboard
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon  fa fa-shopping-cart text-aqua"></i>
-                  <p>
-                    Sales
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-danger elevation-4">
+          <!-- Brand Logo -->
+              <a href="../../My.html" class="brand-link">
+                <img src="../../Img/admin.png" width="50" height="50" alt="AdminLTE Logo" class="brand-image img-circle elevation-3 img-fluid"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-light text-monospace">POS SYSTEM</span><br>
+                <span class="brand-text font-weight-light mx-5" style="font-size: 12px;"><i class="fa fa-circle text-success" style="font-size: 12px;"></i> Online</span>
+              </a>
+          <!-- Sidebar -->
+          <div class="sidebar">
+            <!-- Sidebar Menu -->
+              <nav class="mt-5">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                  <li class="nav-item has-treeview menu-open mb-3">
+                    <a href="#" class="nav-link active">
+                      <i class="nav-icon fa fa-dashboard text-aqua"></i>
+                      <p>
+                        Dashboard
+                      </p>
+                    </a>
+                  </li>
+                  <li class="nav-item has-treeview mb-1">
                     <a href="#" class="nav-link">
-                      <i class="fa fa-calculator  nav-icon"></i>
-                      <p>POS</p>
+                      <i class="nav-icon  fa fa-shopping-cart text-aqua"></i>
+                      <p>
+                        Sales
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fa fa-calculator  nav-icon"></i>
+                          <p>POS</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Sales_Page/New_Sales.html" class="nav-link">
+                          <i class="fa fa-plus-square-o nav-icon"></i>
+                          <p>New Sales</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Sales_Page/Sales_List.html" class="nav-link">
+                          <i class="fa fa-list nav-icon"></i>
+                          <p>Sales List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Sales_Page/Sales_Return.html" class="nav-link">
+                          <i class="fa fa-plus-square-o nav-icon"></i>
+                          <p>New Sales Return</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Sales_Page/Sales_RL.html" class="nav-link">
+                          <i class="fa fa-list nav-icon"></i>
+                          <p>Sales Return List</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Sales_Page/New_Sales.html" class="nav-link">
-                      <i class="fa fa-plus-square-o nav-icon"></i>
-                      <p>New Sales</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Sales_Page/Sales_List.html" class="nav-link">
-                      <i class="fa fa-list nav-icon"></i>
-                      <p>Sales List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Sales_Page/Sales_Return.html" class="nav-link">
-                      <i class="fa fa-plus-square-o nav-icon"></i>
-                      <p>New Sales Return</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Sales_Page/Sales_RL.html" class="nav-link">
-                      <i class="fa fa-list nav-icon"></i>
-                      <p>Sales Return List</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-group text-aqua"></i>
-                  <p>
-                    Customers
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Customer_Page/New_Customer.html" class="nav-link">
-                      <i class="fa fa-plus-square-o  nav-icon"></i>
-                      <p>New Customer</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Customer_Page/Customer_List.html" class="nav-link">
-                      <i class="fa fa-list nav-icon"></i>
-                      <p>Customers List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
+                  <li class="nav-item has-treeview mb-1">
                     <a href="#" class="nav-link">
-                      <i class="fa fa-arrow-circle-o-left  nav-icon"></i>
-                      <p>Import Customers</p>
+                      <i class="nav-icon fa fa-group text-aqua"></i>
+                      <p>
+                        Customers
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Customer_Page/New_Customer.html" class="nav-link">
+                          <i class="fa fa-plus-square-o  nav-icon"></i>
+                          <p>New Customer</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Customer_Page/Customer_List.html" class="nav-link">
+                          <i class="fa fa-list nav-icon"></i>
+                          <p>Customers List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fa fa-arrow-circle-o-left  nav-icon"></i>
+                          <p>Import Customers</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-th-large text-aqua"></i>
-                  <p>
-                    Purchase
-                    <i class="right fa fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Purchase_Page/Purchase.html" class="nav-link">
-                      <i class="fa fa-plus-square-o  nav-icon"></i>
-                      <p>New Purchase</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Purchase_Page/Purchase_List.html" class="nav-link">
-                      <i class="fa fa-list nav-icon"></i>
-                      <p>Purchase List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Purchase_Page/Purchase_Return.html" class="nav-link">
-                      <i class="fa fa-plus-square-o nav-icon"></i>
-                      <p>New Purchase Return</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Purchase_Page/Purchase_RL.html" class="nav-link">
-                      <i class="fa fa-list nav-icon"></i>
-                      <p> Purchase Return List</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-user-plus text-aqua"></i>
-                  <p>
-                    Suppliers
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Supplier_Page/Supplier.html" class="nav-link">
-                      <i class="fa fa-plus-square-o nav-icon"></i>
-                      <p>New Suppliers</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Supplier_Page/Supplier_List.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>Suppliers List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
+                  <li class="nav-item has-treeview mb-1">
                     <a href="#" class="nav-link">
-                      <i class="fa fa-arrow-circle-o-left  nav-icon"></i>
-                      <p>Import Suppliers</p>
+                      <i class="nav-icon fa fa-th-large text-aqua"></i>
+                      <p>
+                        Purchase
+                        <i class="right fa fa-angle-left"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Purchase_Page/Purchase.html" class="nav-link">
+                          <i class="fa fa-plus-square-o  nav-icon"></i>
+                          <p>New Purchase</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Purchase_Page/Purchase_List.html" class="nav-link">
+                          <i class="fa fa-list nav-icon"></i>
+                          <p>Purchase List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Purchase_Page/Purchase_Return.html" class="nav-link">
+                          <i class="fa fa-plus-square-o nav-icon"></i>
+                          <p>New Purchase Return</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Purchase_Page/Purchase_RL.html" class="nav-link">
+                          <i class="fa fa-list nav-icon"></i>
+                          <p> Purchase Return List</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-cubes text-aqua"></i>
-                  <p>
-                    Items
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Items_Page/New_Items.html" class="nav-link">
-                      <i class="fa fa-plus-square-o  nav-icon"></i>
-                      <p>New Items</p>
+                  <li class="nav-item has-treeview mb-1">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fa fa-user-plus text-aqua"></i>
+                      <p>
+                        Suppliers
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Supplier_Page/Supplier.html" class="nav-link">
+                          <i class="fa fa-plus-square-o nav-icon"></i>
+                          <p>New Suppliers</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Supplier_Page/Supplier_List.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>Suppliers List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fa fa-arrow-circle-o-left  nav-icon"></i>
+                          <p>Import Suppliers</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Items_Page/Item_List.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>Items List</p>
+                  <li class="nav-item has-treeview mb-1">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fa fa-cubes text-aqua"></i>
+                      <p>
+                        Items
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Items_Page/New_Items.html" class="nav-link">
+                          <i class="fa fa-plus-square-o  nav-icon"></i>
+                          <p>New Items</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Items_Page/Item_List.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>Items List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Items_Page/Category.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>New Category</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Items_Page/Category_List.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>Category List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Items_Page/Brand.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p> New Brand</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Items_Page/Brand_List.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p> Brand List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Items_Page/Print.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p> Print Labels </p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Items_Page/Category.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>New Category</p>
+                  <li class="nav-item has-treeview mb-1">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fa fa-minus-circle text-aqua"></i>
+                      <p>
+                        Expences
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Expences_Page/New_Expence.html" class="nav-link">
+                          <i class="fa fa-plus-square-o nav-icon"></i>
+                          <p>New Expences</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Expences_Page/Expence_List.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>Expences List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Expences_Page/Expence_Category.html" class="nav-link">
+                          <i class="fa fa-plus-square-o  nav-icon"></i>
+                          <p>New Category</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Expences_Page/Category_List.html" class="nav-link">
+                          <i class="fa fa-list nav-icon"></i>
+                          <p>Category List</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Items_Page/Category_List.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>Category List</p>
+                  <li class="nav-item has-treeview mb-1">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fa fa-paper-plane-o text-aqua"></i>
+                      <p>
+                        Places
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Places_Page/Country.html" class="nav-link">
+                          <i class="fa fa-plus-square-o  nav-icon"></i>
+                          <p>New Country </p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Places_Page/Country_List.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>Countries List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Places_Page/State.html" class="nav-link">
+                          <i class="fa fa-plus-square-o nav-icon"></i>
+                          <p>New State</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Places_Page/State_List.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>State List</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Items_Page/Brand.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p> New Brand</p>
+                  <li class="nav-item has-treeview mb-1">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fa fa-paper-plane-o text-aqua"></i>
+                      <p>
+                        Report
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Items_Page/Brand_List.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p> Brand List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Items_Page/Print.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p> Print Labels </p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-minus-circle text-aqua"></i>
-                  <p>
-                    Expences
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Expences_Page/New_Expence.html" class="nav-link">
-                      <i class="fa fa-plus-square-o nav-icon"></i>
-                      <p>New Expences</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Expences_Page/Expence_List.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>Expences List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Expences_Page/Expence_Category.html" class="nav-link">
-                      <i class="fa fa-plus-square-o  nav-icon"></i>
-                      <p>New Category</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Expences_Page/Category_List.html" class="nav-link">
-                      <i class="fa fa-list nav-icon"></i>
-                      <p>Category List</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-paper-plane-o text-aqua"></i>
-                  <p>
-                    Places
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Places_Page/Country.html" class="nav-link">
-                      <i class="fa fa-plus-square-o  nav-icon"></i>
-                      <p>New Country </p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Places_Page/Country_List.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>Countries List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Places_Page/State.html" class="nav-link">
-                      <i class="fa fa-plus-square-o nav-icon"></i>
-                      <p>New State</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Places_Page/State_List.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>State List</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-paper-plane-o text-aqua"></i>
-                  <p>
-                    Report
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Report_Page/Profit_Report.html" class="nav-link">
-                      <i class="fa fa-file nav-icon"></i>
-                      <p>Profit & Loss report  </p>
-                    </a>
-                  </li>
-  
-                  <li class="nav-item">
-                    <a href="../../Pages/Report_Page/Purchse_Report.html" class="nav-link">
-                      <i class="fa fa-file nav-icon"></i>
-                      <p>Purchase Report  </p>
-                    </a>
-                  </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Purchase_Rp.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p>Purchase Return Report   </p>
-                      </a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Purchase_Pr.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p>Purchase Payment Report   </p>
-                      </a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Item_Sr.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p> Item Sales Report   </p>
-                      </a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Item_Pr.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p> Item Purchase Report   </p>
-                      </a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Sales_Report.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p>  Sales Report   </p>
-                      </a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Sales_Rp.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p>  Sales Return  Report   </p>
-                      </a>
-                    </li>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Report_Page/Profit_Report.html" class="nav-link">
+                          <i class="fa fa-file nav-icon"></i>
+                          <p>Profit & Loss report  </p>
+                        </a>
+                      </li>
+      
+                      <li class="nav-item">
+                        <a href="../../Pages/Report_Page/Purchse_Report.html" class="nav-link">
+                          <i class="fa fa-file nav-icon"></i>
+                          <p>Purchase Report  </p>
+                        </a>
+                      </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Purchase_Rp.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p>Purchase Return Report   </p>
+                          </a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Purchase_Pr.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p>Purchase Payment Report   </p>
+                          </a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Item_Sr.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p> Item Sales Report   </p>
+                          </a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Item_Pr.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p> Item Purchase Report   </p>
+                          </a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Sales_Report.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p>  Sales Report   </p>
+                          </a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Sales_Rp.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p>  Sales Return  Report   </p>
+                          </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Sales_Rp.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p>  Sales Payment Report   </p>
+                          </a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Stock_Report.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p>  Stock Report   </p>
+                          </a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Expence_Report.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p> Expence Report   </p>
+                          </a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="../../Pages/Report_Page/Expired_Ir.html" class="nav-link">
+                            <i class="fa fa-file nav-icon"></i>
+                            <p>  Expired Item Report   </p>
+                          </a>
+                        </li>
                     
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Sales_Rp.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p>  Sales Payment Report   </p>
-                      </a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Stock_Report.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p>  Stock Report   </p>
-                      </a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Expence_Report.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p> Expence Report   </p>
-                      </a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a href="../../Pages/Report_Page/Expired_Ir.html" class="nav-link">
-                        <i class="fa fa-file nav-icon"></i>
-                        <p>  Expired Item Report   </p>
-                      </a>
-                    </li>
-                
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-users text-aqua"></i>
-                  <p>
-                    Users
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/User_Page/User.html" class="nav-link">
-                      <i class="fa fa-plus-square-o  nav-icon"></i>
-                      <p>New Users </p>
-                    </a>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/User_Page/User_List.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>Users List</p>
+                  <li class="nav-item has-treeview mb-1">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fa fa-users text-aqua"></i>
+                      <p>
+                        Users
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/User_Page/User.html" class="nav-link">
+                          <i class="fa fa-plus-square-o  nav-icon"></i>
+                          <p>New Users </p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/User_Page/User_List.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>Users List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/User_Page/Role.html" class="nav-link">
+                          <i class="fa fa-list nav-icon"></i>
+                          <p>Role List</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/User_Page/Role.html" class="nav-link">
-                      <i class="fa fa-list nav-icon"></i>
-                      <p>Role List</p>
+                  <li class="nav-item has-treeview mb-1">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fa fa-book"></i>
+                      <p>
+                        SMS
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Sms_Page/Send.html" class="nav-link">
+                          <i class="fa fa-envelope-o  nav-icon"></i>
+                          <p>Send SMS</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Sms_Page/Template.html" class="nav-link">
+                          <i class="fa fa-list nav-icon"></i>
+                          <p>SMS Template</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fa fa-cube nav-icon"></i>
+                          <p>SMS API</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview mb-1">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-book"></i>
-                  <p>
-                    SMS
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Sms_Page/Send.html" class="nav-link">
-                      <i class="fa fa-envelope-o  nav-icon"></i>
-                      <p>Send SMS</p>
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fa fa-plus-square"></i>
+                      <p>
+                        Settings
+                        <i class="fa fa-angle-left right"></i>
+                      </p>
                     </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Sms_Page/Template.html" class="nav-link">
-                      <i class="fa fa-list nav-icon"></i>
-                      <p>SMS Template</p>
-                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="../../Pages/Setting_Page/Profile.html" class="nav-link">
+                          <i class="fa fa-suitcase nav-icon"></i>
+                          <p>Company Profile</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Setting_Page/Site.html" class="nav-link">
+                          <i class="fa fa-shield  nav-icon"></i>
+                          <p>Site Settings</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Setting_Page/Tax.html" class="nav-link">
+                          <i class="fa fa-percent  nav-icon"></i>
+                          <p>Tax List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Setting_Page/Units.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p> Units List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Setting_Page/Payment.html" class="nav-link">
+                          <i class="fa fa-list  nav-icon"></i>
+                          <p>Payments Types List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Setting_Page/Currency.html" class="nav-link">
+                          <i class="fa fa-gg  nav-icon"></i>
+                          <p>Currency List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../../Pages/Setting_Page/Password.html" class="nav-link">
+                          <i class="fa fa-lock  nav-icon"></i>
+                          <p>Change Password</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fa fa-database  nav-icon"></i>
+                          <p>Database Backup</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fa fa-cube nav-icon"></i>
-                      <p>SMS API</p>
+                      <i class="nav-icon fa fa-book"></i>
+                      <p>Help</p>
                     </a>
+                  </li>
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-plus-square"></i>
-                  <p>
-                    Settings
-                    <i class="fa fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../../Pages/Setting_Page/Profile.html" class="nav-link">
-                      <i class="fa fa-suitcase nav-icon"></i>
-                      <p>Company Profile</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Setting_Page/Site.html" class="nav-link">
-                      <i class="fa fa-shield  nav-icon"></i>
-                      <p>Site Settings</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Setting_Page/Tax.html" class="nav-link">
-                      <i class="fa fa-percent  nav-icon"></i>
-                      <p>Tax List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Setting_Page/Units.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p> Units List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Setting_Page/Payment.html" class="nav-link">
-                      <i class="fa fa-list  nav-icon"></i>
-                      <p>Payments Types List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Setting_Page/Currency.html" class="nav-link">
-                      <i class="fa fa-gg  nav-icon"></i>
-                      <p>Currency List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../Pages/Setting_Page/Password.html" class="nav-link">
-                      <i class="fa fa-lock  nav-icon"></i>
-                      <p>Change Password</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa fa-database  nav-icon"></i>
-                      <p>Database Backup</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-book"></i>
-                  <p>Help</p>
-                </a>
-              </li>
-              </li>
-            </ul>
-          </nav>
-        <!-- /.sidebar-menu -->
-      </div>
-      <!-- /.sidebar -->
-  </aside>
-    <!-- Main Footer -->
+              </nav>
+            <!-- /.sidebar-menu -->
+          </div>
+          <!-- /.sidebar -->
+        </aside>
+        <!-- Main Footer -->
 
 </div>
 </body>
@@ -879,4 +881,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
-</html>rgba(224, 110, 110, 0.125)
+</html>
