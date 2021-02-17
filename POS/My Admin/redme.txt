@@ -1,0 +1,6 @@
+http://domain.com/api/user -> GET -> My User info
+http://domain.com/api/user/:id -> GET -> 
+http://domain.com/api/user/:id/:type -> 
+http://domain.com/api/user/5 -> GET -> john's name
+http://domain.com/api/user/5/bio -> GET -> john's bio
+http://domain.com/api/user/5/posts -> GET -> john's friend-list
